@@ -1,0 +1,188 @@
+body{font-family:sans-serif;background:#0f1720;color:white;padding:20px}
+.container{display:flex;flex-wrap:wrap;gap:20px}
+.card{background:#111827;padding:20px;border-radius:12px;width:150px;text-align:center}
+.square{width:80px;height:80px;border-radius:10px;background:#26d07b;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;opacity:0}
+button{margin:4px;padding:6px 10px;border:none;border-radius:6px}
+
+/* 30 animations */
+
+.fadeIn{}
+.animate-fadeIn{animation:fadeIn 0.8s ease forwards}
+.fadeInUp{}
+.animate-fadeInUp{animation:fadeInUp 0.8s ease forwards}
+.fadeInDown{}
+.animate-fadeInDown{animation:fadeInDown 0.8s ease forwards}
+.fadeInLeft{}
+.animate-fadeInLeft{animation:fadeInLeft 0.8s ease forwards}
+.fadeInRight{}
+.animate-fadeInRight{animation:fadeInRight 0.8s ease forwards}
+.zoomIn{}
+.animate-zoomIn{animation:zoomIn 0.8s ease forwards}
+.zoomOut{}
+.animate-zoomOut{animation:zoomOut 0.8s ease forwards}
+.pop{}
+.animate-pop{animation:pop 0.8s ease forwards}
+.scaleUp{}
+.animate-scaleUp{animation:scaleUp 0.8s ease forwards}
+.scaleDown{}
+.animate-scaleDown{animation:scaleDown 0.8s ease forwards}
+.rotateIn{}
+.animate-rotateIn{animation:rotateIn 0.8s ease forwards}
+.rotateOut{}
+.animate-rotateOut{animation:rotateOut 0.8s ease forwards}
+.flipX{}
+.animate-flipX{animation:flipX 0.8s ease forwards}
+.flipY{}
+.animate-flipY{animation:flipY 0.8s ease forwards}
+.pulse{}
+.animate-pulse{animation:pulse 0.8s ease forwards}
+.bounce{}
+.animate-bounce{animation:bounce 0.8s ease forwards}
+.slideLeft{}
+.animate-slideLeft{animation:slideLeft 0.8s ease forwards}
+.slideRight{}
+.animate-slideRight{animation:slideRight 0.8s ease forwards}
+.slideUp{}
+.animate-slideUp{animation:slideUp 0.8s ease forwards}
+.slideDown{}
+.animate-slideDown{animation:slideDown 0.8s ease forwards}
+.lightIn{}
+.animate-lightIn{animation:lightIn 0.8s ease forwards}
+.lightOut{}
+.animate-lightOut{animation:lightOut 0.8s ease forwards}
+.softIn{}
+.animate-softIn{animation:softIn 0.8s ease forwards}
+.softOut{}
+.animate-softOut{animation:softOut 0.8s ease forwards}
+.blurIn{}
+.animate-blurIn{animation:blurIn 0.8s ease forwards}
+.blurOut{}
+.animate-blurOut{animation:blurOut 0.8s ease forwards}
+.stretchIn{}
+.animate-stretchIn{animation:stretchIn 0.8s ease forwards}
+.stretchOut{}
+.animate-stretchOut{animation:stretchOut 0.8s ease forwards}
+.hingeIn{}
+.animate-hingeIn{animation:hingeIn 0.8s ease forwards}
+.hingeOut{}
+.animate-hingeOut{animation:hingeOut 0.8s ease forwards}
+@keyframes fadeIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes fadeInUp {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes fadeInDown {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes fadeInLeft {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes fadeInRight {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes zoomIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes zoomOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes pop {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes scaleUp {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes scaleDown {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes rotateIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes rotateOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes flipX {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes flipY {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes pulse {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes bounce {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes slideLeft {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes slideRight {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes slideUp {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes slideDown {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes lightIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes lightOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes softIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes softOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes blurIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes blurOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes stretchIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes stretchOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes hingeIn {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes hingeOut {
+  0%{opacity:0;transform:translateY(20px) scale(0.9)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
