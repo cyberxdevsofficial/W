@@ -1,43 +1,78 @@
-
 const animations = [
-  {name:'fadeIn',type:'entrance'},
-  {name:'fadeInUp',type:'entrance'},
-  {name:'fadeInLeft',type:'entrance'},
-  {name:'pop',type:'attention'},
-  {name:'pulse',type:'attention'},
-  {name:'zoomIn',type:'entrance'},
-  {name:'bounce',type:'attention'},
-  {name:'slideUp',type:'entrance'}
+  {name:'fadeIn',cat:'entrance'},
+  {name:'slideInLeft',cat:'entrance'},
+  {name:'slideInRight',cat:'entrance'},
+  {name:'slideInUp',cat:'entrance'},
+  {name:'slideInDown',cat:'entrance'},
+  {name:'zoomIn',cat:'entrance'},
+  {name:'flipInX',cat:'entrance'},
+  {name:'bounce',cat:'attention'},
+  {name:'shake',cat:'attention'},
+  {name:'pulse',cat:'attention'},
+  {name:'tada',cat:'attention'},
+  {name:'rubberBand',cat:'attention'},
+  {name:'wobble',cat:'attention'},
+  {name:'heartBeat',cat:'attention'},
+  {name:'fadeOut',cat:'exit'},
+  {name:'slideOutLeft',cat:'exit'},
+  {name:'slideOutRight',cat:'exit'},
+  {name:'slideOutUp',cat:'exit'},
+  {name:'slideOutDown',cat:'exit'},
+  {name:'zoomOut',cat:'exit'},
+  {name:'flipOutX',cat:'exit'},
+  {name:'spin',cat:'special'},
+  {name:'rotate',cat:'special'},
+  {name:'float',cat:'special'},
+  {name:'jump',cat:'special'},
+  {name:'glow',cat:'special'},
+  {name:'scale',cat:'special'},
+  {name:'stretch',cat:'special'},
+  {name:'pop',cat:'special'}
 ];
 
-function render(filter='all'){
-  const wrap=document.getElementById('cards');
-  wrap.innerHTML='';
-  animations.filter(a=>filter==='all'||a.type===filter).forEach(a=>{
-    const card=document.createElement('div');
-    card.className='card';
-    card.innerHTML=`<div class="square" id="${a.name}">${a.name}</div>`;
-    wrap.appendChild(card);
-    play(a.name);
+function render(){
+  const list=document.getElementById('animation-list');
+  list.innerHTML='';
+  let q=document.getElementById('search').value.toLowerCase();
+  let cat=document.querySelector('.cat-btn.active').dataset.cat;
+
+  animations.filter(a=> 
+    (cat==='all'||a.cat===cat)&&a.name.toLowerCase().includes(q)
+  ).forEach(a=>{
+    let div=document.createElement('div');
+    div.className='card';
+    div.innerHTML=`
+      <h3>${a.name}</h3>
+      <div class="preview" id="prev-${a.name}">Play</div>
+      <div class="buttons">
+        <button class="btn" onclick="replay('${a.name}')">Replay</button>
+        <button class="btn" onclick="copyCode('${a.name}')">Copy Code</button>
+      </div>
+    `;
+    list.appendChild(div);
   });
 }
 
-function play(name){
-  const el=document.getElementById(name);
-  if(!el) return;
-  el.style.opacity=0;
-  el.classList.remove('anim');
-  void el.offsetWidth;
-  el.classList.add('anim');
-  el.style.animation = `${name} 1s ease forwards`;
+function replay(anim){
+  let el=document.getElementById('prev-'+anim);
+  el.style.animation='none';
+  void el.offsetHeight;
+  el.style.animation=anim+' 1s ease';
 }
 
-document.querySelectorAll('.tab').forEach(btn=>{
-  btn.onclick=()=>{
-    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-    btn.classList.add('active');
-    render(btn.dataset.filter);
+function copyCode(anim){
+  navigator.clipboard.writeText(`animation: ${anim} 1s ease;`);
+  alert('Code Copied!');
+}
+
+document.querySelectorAll('.cat-btn').forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll('.cat-btn').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    render();
   };
 });
+
+document.getElementById('search').oninput=render;
 
 render();

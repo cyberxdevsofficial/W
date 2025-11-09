@@ -1,32 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Anuga Animation Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation Studio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="header">
+  <h1>Animation Studio</h1>
+  <p>Professional animations for your website</p>
+</div>
 
-<section class="hero">
-  <h1><span class="icon">🧑‍🔧</span> ANUGA<br>ANIMATION<br>STUDIO</h1>
-  <p>Professional animations for your website. Copy, paste, and impress your website visitors!</p>
-  <div class="premium-btn">⭐ 30+ Premium Animations</div>
-</section>
-
-<section class="searchbox">
+<div class="controls">
   <input type="text" id="search" placeholder="Search animations...">
-  <div class="tabs">
-    <button class="tab active" data-filter="all">All</button>
-    <button class="tab" data-filter="entrance">Entrance</button>
-    <button class="tab" data-filter="attention">Attention</button>
-    <button class="tab" data-filter="special">Special</button>
+  <div class="cats">
+    <button class="cat-btn active" data-cat="all">All</button>
+    <button class="cat-btn" data-cat="entrance">Entrance</button>
+    <button class="cat-btn" data-cat="attention">Attention</button>
+    <button class="cat-btn" data-cat="exit">Exit</button>
+    <button class="cat-btn" data-cat="special">Special</button>
   </div>
-</section>
+</div>
 
-<section class="container" id="cards"></section>
+<div id="animation-list"></div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
