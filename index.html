@@ -1,196 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Animation Studio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Animation Studio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Animation Studio (30 Animations)</h1>
-  <div class="container">
 
-    <div class="card">
-      <div class="square fadeIn" id="fadeInSquare"> fadeIn </div>
-      <button onclick="play('fadeIn')">Play</button>
-      <button onclick="copyClass('fadeIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square fadeInUp" id="fadeInUpSquare"> fadeInUp </div>
-      <button onclick="play('fadeInUp')">Play</button>
-      <button onclick="copyClass('fadeInUp')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square fadeInDown" id="fadeInDownSquare"> fadeInDown </div>
-      <button onclick="play('fadeInDown')">Play</button>
-      <button onclick="copyClass('fadeInDown')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square fadeInLeft" id="fadeInLeftSquare"> fadeInLeft </div>
-      <button onclick="play('fadeInLeft')">Play</button>
-      <button onclick="copyClass('fadeInLeft')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square fadeInRight" id="fadeInRightSquare"> fadeInRight </div>
-      <button onclick="play('fadeInRight')">Play</button>
-      <button onclick="copyClass('fadeInRight')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square zoomIn" id="zoomInSquare"> zoomIn </div>
-      <button onclick="play('zoomIn')">Play</button>
-      <button onclick="copyClass('zoomIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square zoomOut" id="zoomOutSquare"> zoomOut </div>
-      <button onclick="play('zoomOut')">Play</button>
-      <button onclick="copyClass('zoomOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square pop" id="popSquare"> pop </div>
-      <button onclick="play('pop')">Play</button>
-      <button onclick="copyClass('pop')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square scaleUp" id="scaleUpSquare"> scaleUp </div>
-      <button onclick="play('scaleUp')">Play</button>
-      <button onclick="copyClass('scaleUp')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square scaleDown" id="scaleDownSquare"> scaleDown </div>
-      <button onclick="play('scaleDown')">Play</button>
-      <button onclick="copyClass('scaleDown')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square rotateIn" id="rotateInSquare"> rotateIn </div>
-      <button onclick="play('rotateIn')">Play</button>
-      <button onclick="copyClass('rotateIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square rotateOut" id="rotateOutSquare"> rotateOut </div>
-      <button onclick="play('rotateOut')">Play</button>
-      <button onclick="copyClass('rotateOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square flipX" id="flipXSquare"> flipX </div>
-      <button onclick="play('flipX')">Play</button>
-      <button onclick="copyClass('flipX')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square flipY" id="flipYSquare"> flipY </div>
-      <button onclick="play('flipY')">Play</button>
-      <button onclick="copyClass('flipY')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square pulse" id="pulseSquare"> pulse </div>
-      <button onclick="play('pulse')">Play</button>
-      <button onclick="copyClass('pulse')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square bounce" id="bounceSquare"> bounce </div>
-      <button onclick="play('bounce')">Play</button>
-      <button onclick="copyClass('bounce')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square slideLeft" id="slideLeftSquare"> slideLeft </div>
-      <button onclick="play('slideLeft')">Play</button>
-      <button onclick="copyClass('slideLeft')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square slideRight" id="slideRightSquare"> slideRight </div>
-      <button onclick="play('slideRight')">Play</button>
-      <button onclick="copyClass('slideRight')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square slideUp" id="slideUpSquare"> slideUp </div>
-      <button onclick="play('slideUp')">Play</button>
-      <button onclick="copyClass('slideUp')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square slideDown" id="slideDownSquare"> slideDown </div>
-      <button onclick="play('slideDown')">Play</button>
-      <button onclick="copyClass('slideDown')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square lightIn" id="lightInSquare"> lightIn </div>
-      <button onclick="play('lightIn')">Play</button>
-      <button onclick="copyClass('lightIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square lightOut" id="lightOutSquare"> lightOut </div>
-      <button onclick="play('lightOut')">Play</button>
-      <button onclick="copyClass('lightOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square softIn" id="softInSquare"> softIn </div>
-      <button onclick="play('softIn')">Play</button>
-      <button onclick="copyClass('softIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square softOut" id="softOutSquare"> softOut </div>
-      <button onclick="play('softOut')">Play</button>
-      <button onclick="copyClass('softOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square blurIn" id="blurInSquare"> blurIn </div>
-      <button onclick="play('blurIn')">Play</button>
-      <button onclick="copyClass('blurIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square blurOut" id="blurOutSquare"> blurOut </div>
-      <button onclick="play('blurOut')">Play</button>
-      <button onclick="copyClass('blurOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square stretchIn" id="stretchInSquare"> stretchIn </div>
-      <button onclick="play('stretchIn')">Play</button>
-      <button onclick="copyClass('stretchIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square stretchOut" id="stretchOutSquare"> stretchOut </div>
-      <button onclick="play('stretchOut')">Play</button>
-      <button onclick="copyClass('stretchOut')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square hingeIn" id="hingeInSquare"> hingeIn </div>
-      <button onclick="play('hingeIn')">Play</button>
-      <button onclick="copyClass('hingeIn')">Copy Class</button>
-    </div>
-    
-    <div class="card">
-      <div class="square hingeOut" id="hingeOutSquare"> hingeOut </div>
-      <button onclick="play('hingeOut')">Play</button>
-      <button onclick="copyClass('hingeOut')">Copy Class</button>
-    </div>
-    
+<section class="hero">
+  <h1><span class="icon">▶</span> CHAMA<br>Animation<br>Studio</h1>
+  <p>Professional animations for your website. Copy, paste, and impress your visitors!</p>
+  <div class="premium-btn">⭐ 20+ Premium Animations</div>
+</section>
+
+<section class="searchbox">
+  <input type="text" id="search" placeholder="Search animations...">
+  <div class="tabs">
+    <button class="tab active" data-filter="all">All</button>
+    <button class="tab" data-filter="entrance">Entrance</button>
+    <button class="tab" data-filter="attention">Attention</button>
+    <button class="tab" data-filter="special">Special</button>
   </div>
+</section>
+
+<section class="container" id="cards"></section>
+
 <script src="script.js"></script>
 </body>
 </html>
